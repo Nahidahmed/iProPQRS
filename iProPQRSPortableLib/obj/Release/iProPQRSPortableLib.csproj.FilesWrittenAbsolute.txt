@@ -1,0 +1,11 @@
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/obj/Release/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/bin/Release/iProPQRSPortableLib.dll.mdb
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/bin/Release/iProPQRSPortableLib.dll
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/obj/Release/iProPQRSPortableLib.dll
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/obj/Release/iProPQRSPortableLib.dll.mdb
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/bin/Release/Microsoft.Threading.Tasks.dll
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/bin/Release/Microsoft.Threading.Tasks.Extensions.dll
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/bin/Release/Newtonsoft.Json.dll
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/bin/Release/System.Net.Http.dll
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/bin/Release/System.Net.Http.Primitives.dll
+/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRSPortableLib/bin/Release/System.Net.Http.Extensions.dll

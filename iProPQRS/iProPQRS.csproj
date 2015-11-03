@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{E8E3AD35-77F8-4962-80ED-04AC1D03B503}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>iProPQRS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>iProPQRS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Distribution: i Procedures LLC</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <CodesignProvision>1e3bd0ee-fc30-4dc0-b414-c5fc18b4ff97</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution: i Procedures LLC</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <IpaPackageName>
+    </IpaPackageName>
+    <CodesignProvision>1e3bd0ee-fc30-4dc0-b414-c5fc18b4ff97</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignProvision>1e3bd0ee-fc30-4dc0-b414-c5fc18b4ff97</CodesignProvision>
+    <CodesignKey>iPhone Distribution: i Procedures LLC</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Distribution: i Procedures LLC</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <IpaPackageName>
+    </IpaPackageName>
+    <CodesignProvision>1e3bd0ee-fc30-4dc0-b414-c5fc18b4ff97</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="MBProgressHUD">
+      <HintPath>..\Components\mbprogresshud-0.9.0.2\lib\ios-unified\MBProgressHUD.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Screens\LoginScreen~iphone.xib" />
+    <InterfaceDefinition Include="Screens\LoginScreen~ipad.xib" />
+    <InterfaceDefinition Include="Screens\PatientListView.xib" />
+    <InterfaceDefinition Include="Resources\Screens\en.lproj\PatientListView.xib" />
+    <InterfaceDefinition Include="Screens\PatientTableViewCell.xib" />
+    <InterfaceDefinition Include="Screens\PatientSectionHeaderView.xib" />
+    <InterfaceDefinition Include="Screens\DateTimePicker.xib" />
+    <InterfaceDefinition Include="Screens\FacilityDropDownViewController.xib" />
+    <InterfaceDefinition Include="Screens\AddPatientViewController.xib" />
+    <InterfaceDefinition Include="Resources\Screens\en.lproj\AddPatientViewController.xib" />
+    <InterfaceDefinition Include="Screens\DropDownViewController.xib" />
+    <InterfaceDefinition Include="Screens\AddEditPatientViewController.xib" />
+    <InterfaceDefinition Include="CodePicker\CodePicker.xib" />
+    <InterfaceDefinition Include="CodePicker\DatePicker.xib" />
+    <InterfaceDefinition Include="CodePicker\TimePicker.xib" />
+    <InterfaceDefinition Include="Launch.storyboard" />
+    <InterfaceDefinition Include="CodePicker\mCodePicker.xib" />
+    <InterfaceDefinition Include="CodePicker\MultilevelPopup\mlsCodePicker.xib" />
+    <InterfaceDefinition Include="Screens\QualityMetricsForm.xib" />
+    <InterfaceDefinition Include="Screens\QualityMetricsASA.xib" />
+    <InterfaceDefinition Include="Screens\QualityMetricsASA10.xib" />
+    <InterfaceDefinition Include="CodePicker\qmCodePicker.xib" />
+    <InterfaceDefinition Include="Screens\ImagesGalleryView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="CodePicker\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Screens\LoginScreen.cs" />
+    <Compile Include="Screens\LoginScreen.designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\RazorViewController.cs" />
+    <Compile Include="Screens\PatientListView.cs" />
+    <Compile Include="Screens\PatientListView.designer.cs">
+      <DependentUpon>PatientListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\PatientItemGroup.cs" />
+    <Compile Include="Code\PatientTableSource.cs" />
+    <Compile Include="Screens\PatientTableViewCell.cs" />
+    <Compile Include="Screens\PatientTableViewCell.designer.cs">
+      <DependentUpon>PatientTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PatientSectionHeaderView.cs" />
+    <Compile Include="Screens\PatientSectionHeaderView.designer.cs">
+      <DependentUpon>PatientSectionHeaderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\reachability.cs" />
+    <Compile Include="Screens\DateTimePicker.cs" />
+    <Compile Include="Screens\DateTimePicker.designer.cs">
+      <DependentUpon>DateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\FacilityDropDownViewController.cs" />
+    <Compile Include="Screens\FacilityDropDownViewController.designer.cs">
+      <DependentUpon>FacilityDropDownViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Validation.cs" />
+    <Compile Include="Code\ProgressElement.cs" />
+    <Compile Include="Screens\AddPatientViewController.cs" />
+    <Compile Include="Screens\AddPatientViewController.designer.cs">
+      <DependentUpon>AddPatientViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DropDownViewController.cs" />
+    <Compile Include="Screens\DropDownViewController.designer.cs">
+      <DependentUpon>DropDownViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\SignatureView.cs" />
+    <Compile Include="Screens\AddEditPatientViewController.cs" />
+    <Compile Include="Screens\AddEditPatientViewController.designer.cs">
+      <DependentUpon>AddEditPatientViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodePicker\CodePicker.cs" />
+    <Compile Include="CodePicker\CodePicker.designer.cs" />
+    <Compile Include="CodePicker\DatePicker.cs" />
+    <Compile Include="CodePicker\DatePicker.designer.cs">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodePicker\TimePicker.cs" />
+    <Compile Include="CodePicker\TimePicker.designer.cs">
+      <DependentUpon>TimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodePicker\mCodePicker.cs" />
+    <Compile Include="CodePicker\mCodePicker.designer.cs">
+      <DependentUpon>mCodePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\MultilineTextView.cs" />
+    <Compile Include="CodePicker\MultilevelPopup\RootGroupView.cs" />
+    <Compile Include="CodePicker\MultilevelPopup\RootViewController.cs" />
+    <Compile Include="CodePicker\MultilevelPopup\SubGroupView.cs" />
+    <Compile Include="CodePicker\MultilevelPopup\SubGroupViewController.cs" />
+    <Compile Include="CodePicker\MultilevelPopup\mlsCodePicker.cs" />
+    <Compile Include="CodePicker\MultilevelPopup\mlsCodePicker.designer.cs" />
+    <Compile Include="Screens\QualityMetricsForm.cs" />
+    <Compile Include="Screens\QualityMetricsForm.designer.cs">
+      <DependentUpon>QualityMetricsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\QualityMetricsASA.cs" />
+    <Compile Include="Screens\QualityMetricsASA.designer.cs" />
+    <Compile Include="Screens\QualityMetricsASA10.cs" />
+    <Compile Include="Screens\QualityMetricsASA10.designer.cs" />
+    <Compile Include="CodePicker\qmCodePicker.cs" />
+    <Compile Include="CodePicker\qmCodePicker.designer.cs">
+      <DependentUpon>qmCodePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodePicker\Camera.cs" />
+    <Compile Include="Screens\ImagesGalleryView.cs" />
+    <Compile Include="Screens\ImagesGalleryView.designer.cs">
+      <DependentUpon>ImagesGalleryView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Screens\" />
+    <Folder Include="Code\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\images\" />
+    <Folder Include="CodePicker\" />
+    <Folder Include="CodePicker\MultilevelPopup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\style.css" />
+    <BundleResource Include="Resources\headerBarTall.png" />
+    <BundleResource Include="Resources\intraOpCompleteN.png" />
+    <BundleResource Include="Resources\postOpCompleteN.png" />
+    <BundleResource Include="Resources\preOpCompleteN.png" />
+    <BundleResource Include="Resources\pdf_icon.png" />
+    <BundleResource Include="Resources\tallToolBarOff%402x.png" />
+    <BundleResource Include="Resources\tallToolBarOn%402x.png" />
+    <BundleResource Include="Resources\carat.png" />
+    <BundleResource Include="Resources\header_patient.png" />
+    <BundleResource Include="Resources\carat-open.png" />
+    <BundleResource Include="Resources\addNewPatientOffBlank.png" />
+    <BundleResource Include="Resources\textBoxDropDownSmall.png" />
+    <BundleResource Include="Resources\textBoxDropDown.png" />
+    <BundleResource Include="Resources\refreshOff.png" />
+    <BundleResource Include="Resources\logoutOffBlank.png" />
+    <BundleResource Include="Resources\background.png" />
+    <BundleResource Include="Resources\loginArea.png" />
+    <BundleResource Include="Resources\loginTextbox.png" />
+    <BundleResource Include="Resources\loginOn.png" />
+    <BundleResource Include="Resources\emptyBackOff.png" />
+    <BundleResource Include="Resources\breakLine.png" />
+    <BundleResource Include="Resources\mainRightBG.png" />
+    <BundleResource Include="Resources\lookup%402x.png" />
+    <BundleResource Include="Resources\camera.png" />
+    <BundleResource Include="Resources\photos.png" />
+    <BundleResource Include="Resources\Screens\Default-Landscape.png" />
+    <BundleResource Include="Resources\Default-Landscape.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\addDiagProc.png" />
+    <BundleResource Include="Resources\removeDiagProc.png" />
+    <BundleResource Include="Resources\OK.png" />
+    <BundleResource Include="Resources\clientCodeOk.png" />
+    <BundleResource Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iProPQRSPortableLib\iProPQRSPortableLib.csproj">
+      <Project>{D5701288-BD6B-44B6-A96D-8D7EC9743325}</Project>
+      <Name>iProPQRSPortableLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="mbprogresshud">
+      <Version>0.9.0.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <Version>6.0.8.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\js\common.js" />
+    <Content Include="Content\js\jquery-1.7.1.js" />
+    <Content Include="Content\js\jquery.signaturepad.css" />
+    <Content Include="Content\js\jquery.signaturepad.min.js" />
+    <Content Include="Content\js\jquery.validate.js" />
+    <Content Include="Content\js\json2.min.js" />
+    <Content Include="Content\pqrs.html" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\images\42-photos.png" />
+    <Content Include="Content\images\86-camera.png" />
+    <Content Include="Content\images\bullet_arrow_bottom.png" />
+    <Content Include="Content\images\bullet_arrow_top.png" />
+    <Content Include="Content\images\mainBG.png" />
+    <Content Include="Content\images\search.png" />
+  </ItemGroup>
+</Project>

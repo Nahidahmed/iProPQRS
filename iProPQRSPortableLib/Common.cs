@@ -1,0 +1,149 @@
+﻿using System;
+
+namespace iProPQRSPortableLib
+{
+	public class Common
+	{
+		public Common ()
+		{
+			
+		}
+		public string getCurrentFacilityName()
+		{
+			string FacilityName = string.Empty;
+			foreach (FacilityDetails fac in iProPQRSPortableLib.Consts.Facilities.result) {
+				
+				if (fac.FMID.ToString() == Consts.SelectedFacilityID)
+					return FacilityName = fac.FacilityName;
+			}
+			return "";
+		}
+		public void updateCurrentFacility()
+		{
+			FacilityDetails fac = iProPQRSPortableLib.Consts.Facilities.result.Find (u => u.FMID.ToString() == Consts.SelectedFacilityID);
+			if (fac != null) {
+				Consts.Preop = fac.Preop;
+				Consts.ConsentForm = fac.ConsentFormFlag;
+				Consts.Facesheet = fac.Facesheet;
+				Consts.CustomValidation = fac.CustomValidation;
+				Consts.TemplateWithValues = fac.TemplateWithValues;
+				Consts.Postop = fac.Postop;
+				Consts.ProvidersOption = fac.ProvidersOption;
+				Consts.PreopCamera = fac.PreopCamera;
+				Consts.OB = fac.OB;
+
+			}
+		}
+
+		public string[] getMedicalAidNames()
+		{
+			string[] List =new string[] {  @"BESTMED MEDICAL SCHEME",
+				@"BONITAS MEDICAL FUND",
+				@"CAPE MEDICAL PLAN",
+				@"COMMUNITY MEDICAL AID SCHEME (COMMED)",
+				@"COMPCARE WELLNESS MEDICAL SCHEME",
+				@"DISCOVERY HEALTH MEDICAL SCHEME",
+				@"FEDHEALTH MEDICAL SCHEME",
+				@"GENESIS MEDICAL SCHEME",
+				@"HOSMED MEDICAL AID SCHEME",
+				@"KEYHEALTH",
+				@"LIBERTY MEDICAL SCHEME",
+				@"MAKOTI MEDICAL SCHEME",
+				@"MEDIHELP",
+				@"MEDIMED MEDICAL SCHEME",
+				@"MEDSHIELD MEDICAL SCHEME",
+				@"MOMENTUM HEALTH",
+				@"NATIONAL INDEPENDENT MEDICAL AID SOCIETY (NIMAS)",
+				@"PHAROS MEDICAL PLAN",
+				@"PRO SANO MEDICAL SCHEME",
+				@"RESOLUTION HEALTH MEDICAL SCHEME",
+				@"SELFMED MEDICAL SCHEME",
+				@"SIZWE MEDICAL FUND",
+				@"SPECTRAMED",
+				@"SUREMED HEALTH",
+				@"THEBEMED",
+				@"TOPMED MEDICAL SCHEME",
+				@"Restricted Medical Aids",
+				@"Medical Aid Name",
+				@"AECI MEDICAL AID SOCIETY",
+				@"AFROX MEDICAL AID SOCIETY",
+				@"ALLIANCE MIDMED MEDICAL SCHEME",
+				@"ALTRON MEDICAL AID SCHEME",
+				@"ANGLO MEDICAL SCHEME",
+				@"ANGLOVAAL GROUP MEDICAL SCHEME",
+				@"BANKMED",
+				@"BARLOWORLD MEDICAL SCHEME",
+				@"BMW EMPLOYEES MEDICAL AID SOCIETY",
+				@"BP MEDICAL AID SOCIETY",
+				@"BUILDING & CONSTRUCTION INDUSTRY MEDICAL",
+				@"AID FUND",
+				@"CHARTERED ACCOUNTANTS (SA) MEDICAL AID",
+				@"FUND (CAMAF)",
+				@"DE BEERS BENEFIT SOCIETY",
+				@"ENGEN MEDICAL BENEFIT FUND",
+				@"EYETHUMED MEDICAL SCHEME",
+				@"FISHING INDUSTRY MEDICAL SCHEME (FISH-MED)",
+				@"FOOD WORKERS MEDICAL BENEFIT FUND",
+				@"GOLD FIELDS MEDICAL SCHEME",
+				@"GOLDEN ARROWS EMPLOYEES’ MEDICAL BENEFIT",
+				@"FUND",
+				@"GOVERNMENT EMPLOYEES MEDICAL SCHEME (GEMS)",
+				@"GRINTEK ELECTRONICS MEDICAL AID SCHEME",
+				@"HORIZON MEDICAL SCHEME",
+				@"IBM (SA) MEDICAL SCHEME",
+				@"IMPALA MEDICAL PLAN",
+				@"IMPERIAL GROUP MEDICAL SCHEME",
+				@"LA-HEALTH MEDICAL SCHEME",
+				@"LIBCARE MEDICAL SCHEME",
+				@"LONMIN MEDICAL SCHEME",
+				@"MALCOR MEDICAL SCHEME",
+				@"MASSMART HEALTH PLAN",
+				@"MBMED MEDICAL AID FUND",
+				@"MEDIPOS MEDICAL SCHEME",
+				@"METROCARE",
+				@"METROPOLITAN MEDICAL SCHEME",
+				@"MINEMED MEDICAL SCHEME",
+				@"MOTOHEALTH CARE",
+				@"NAMPAK (SA) MEDICAL SCHEME",
+				@"NASPERS MEDICAL FUND",
+				@"NEDGROUP MEDICAL AID SCHEME",
+				@"NETCARE MEDICAL SCHEME",
+				@"OLD MUTUAL STAFF MEDICAL AID FUND",
+				@"PARMED MEDICAL AID SCHEME",
+				@"PG BISON MEDICAL AID SOCIETY",
+				@"PG GROUP MEDICAL SCHEME",
+				@"PICK N PAY MEDICAL SCHEME",
+				@"PLATINUM HEALTH",
+				@"PROFMED",
+				@"QUANTUM MEDICAL AID SOCIETY",
+				@"RAND WATER MEDICAL SCHEME",
+				@"REMEDI MEDICAL AID SCHEME",
+				@"RETAIL MEDICAL SCHEME",
+				@"RHODES UNIVERSITY MEDICAL SCHEME",
+				@"SABC MEDICAL AID SCHEME",
+				@"SAMWUMED",
+				@"SAPPI MEDICAL AID SCHEME",
+				@"SASOLMED",
+				@"SEDMED",
+				@"SOUTH AFRICAN BREWERIES MEDICAL SCHEME",
+				@"SOUTH AFRICAN POLICE SERVICE MEDICAL",
+				@"SCHEME (POLMED)",
+				@"TFG MEDICAL AID SCHEME",
+				@"TIGER BRANDS MEDICAL SCHEME",
+				@"TRANSMED MEDICAL FUND",
+				@"TSOGO SUN GROUP MEDICAL SCHEME",
+				@"UMVUZO HEALTH MEDICAL SCHEME",
+				@"UNIVERSITY OF KWA-ZULU NATAL MEDICAL",
+				@"SCHEME",
+				@"UNIVERSITY OF THE WITWATERSRAND",
+				@"JOHANNESBURG STAFF MEDICAL AID FUND",
+				@"WITBANK COALFIELDS MEDICAL AID SCHEME",
+				@"WOOLTRU HEALTHCARE FUND",
+				@"XSTRATA ALLOYS MEDICAL AID SCHEME",
+				@"OTHER"};
+
+			return List;
+		}
+	}
+}
+

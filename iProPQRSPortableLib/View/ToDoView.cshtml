@@ -1,0 +1,39 @@
+﻿@using iProPQRSPortableLib
+@model ToDoItem
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body >
+	<form action="hybrid:ToDoView" method="GET">
+		<input name="id" type="hidden" value="@Model.ID" />
+		<h2 style="text-align:center">Testing HTML</h2>
+		<hr>
+		<p>Name</p>
+		<input  name="name" value="@Model.Name" />
+		<p>Notes</p>
+		<input name="notes" value="@Model.Notes" />
+		<p><label for="done">Done:</label><input type="checkbox" name="done" @if (Model.Done) {
+					<text>checked="checked"</text>
+				}
+		/></p>
+		<p>
+			<select>
+			  <option value="volvo">Volvo</option>
+			  <option value="saab">Saab</option>
+			  <option value="opel">Opel</option>
+			  <option value="audi">Audi</option>
+			</select>
+		</p>
+		<p><input type="submit" name="Button" value="Save" onclick="alert('Hi')" />
+		@if (Model.ID <= 0) {
+			<input type="submit" name="Button" value="Cancel" />
+		} else {
+			<input type="submit" name="Button" value="Delete" />
+		}
+		</p>
+		<p><input type="submit" name="Button" value="Speak" /></p>
+
+	</form>
+</body>
+</html>

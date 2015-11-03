@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iProPQRS", "iProPQRS\iProPQRS.csproj", "{E8E3AD35-77F8-4962-80ED-04AC1D03B503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iProPQRSPortableLib", "iProPQRSPortableLib\iProPQRSPortableLib.csproj", "{D5701288-BD6B-44B6-A96D-8D7EC9743325}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5701288-BD6B-44B6-A96D-8D7EC9743325}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D5701288-BD6B-44B6-A96D-8D7EC9743325}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{D5701288-BD6B-44B6-A96D-8D7EC9743325}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D5701288-BD6B-44B6-A96D-8D7EC9743325}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D5701288-BD6B-44B6-A96D-8D7EC9743325}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D5701288-BD6B-44B6-A96D-8D7EC9743325}.Release|iPhone.Build.0 = Release|Any CPU
+		{D5701288-BD6B-44B6-A96D-8D7EC9743325}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D5701288-BD6B-44B6-A96D-8D7EC9743325}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E8E3AD35-77F8-4962-80ED-04AC1D03B503}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E8E3AD35-77F8-4962-80ED-04AC1D03B503}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E8E3AD35-77F8-4962-80ED-04AC1D03B503}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E8E3AD35-77F8-4962-80ED-04AC1D03B503}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E8E3AD35-77F8-4962-80ED-04AC1D03B503}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E8E3AD35-77F8-4962-80ED-04AC1D03B503}.Release|iPhone.Build.0 = Release|iPhone
+		{E8E3AD35-77F8-4962-80ED-04AC1D03B503}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E8E3AD35-77F8-4962-80ED-04AC1D03B503}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+	EndGlobalSection
+EndGlobal

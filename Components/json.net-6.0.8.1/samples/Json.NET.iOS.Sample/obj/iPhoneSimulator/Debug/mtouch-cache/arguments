@@ -1,0 +1,31 @@
+# Version: 8.10.0.267 (6481535)
+# [first argument, ignore] # /Users/systemsofttechnologies/Projects/kumar/iProPQRS/Components/json.net-6.0.8.1/samples/Json.NET.iOS.Sample/bin/iPhoneSimulator/Debug/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.10.0.267/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/systemsofttechnologies/Projects/kumar/iProPQRS/Components/json.net-6.0.8.1/samples/Json.NET.iOS.Sample/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--executable \
+	Sample \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/systemsofttechnologies/Projects/kumar/iProPQRS/Components/json.net-6.0.8.1/samples/Json.NET.iOS.Sample/bin/iPhoneSimulator/Debug/Sample.app \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Users/systemsofttechnologies/Projects/kumar/iProPQRS/Components/json.net-6.0.8.1/samples/Json.NET.iOS.Sample/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	8.3 \
+	-targetver \
+	5.0 \
+	--abi=i386 \
+	/Users/systemsofttechnologies/Projects/kumar/iProPQRS/Components/json.net-6.0.8.1/samples/Json.NET.iOS.Sample/bin/iPhoneSimulator/Debug/Sample.exe \

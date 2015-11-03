@@ -1,0 +1,36 @@
+﻿<Properties StartupItem="iProPQRS/iProPQRS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad2.9.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iProPQRS/Screens/AddPatientViewController.cs">
+    <Files>
+      <File FileName="iProPQRS/Screens/AddPatientViewController.cs" Line="846" Column="10" />
+      <File FileName="iProPQRSPortableLib/Models/User.cs" Line="18" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRS/Screens/AddPatientViewController.cs" line="1968" column="49" />
+      <Breakpoint file="/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRS/CodePicker/MultilevelPopup/SubGroupView.cs" line="42" column="1" />
+      <Breakpoint file="/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRS/Screens/AddPatientViewController.cs" line="836" column="1" />
+      <Breakpoint file="/Users/systemsofttechnologies/Documents/kumar/V1/iOS9/iProPQRS/iProPQRS/Screens/AddPatientViewController.cs" line="473" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="iProPQRS.Android/Fragments/PatientList.cs" line="116" offsetX="784" offsetY="1725" expression="newFragment.Date.ToString(&quot;d&quot;)" liveUpdate="False" />
+    <Watch file="iProPQRS.Android/Fragments/PatientList.cs" line="116" offsetX="784" offsetY="1725" expression="iProPQRSPortableLib.Consts.DataRetrieveDate" liveUpdate="False" />
+    <Watch file="iProPQRS.Android/Fragments/PatientList.cs" line="116" offsetX="785" offsetY="1725" expression="DataRetrieveDate" liveUpdate="False" />
+    <Watch file="iProPQRS/CodePicker/MultilevelPopup/SubGroupView.cs" line="166" offsetX="856" offsetY="2475" expression="pview.SelectedItems" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="780" offsetX="1319" offsetY="11685" expression="selectedAnestheologistList" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="780" offsetX="1319" offsetY="11685" expression="selectedAnestheologistList" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="4334" offsetX="509" offsetY="64995" expression="Types" liveUpdate="False" />
+    <Watch file="iProPQRS/CodePicker/qmCodePicker.cs" line="161" offsetX="1441" offsetY="2400" expression="this.CodePickerController.SelectedItems" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="2631" offsetX="582" offsetY="39450" expression="alist" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="2560" offsetX="1384" offsetY="38385" expression="items" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="2560" offsetX="1384" offsetY="38385" expression="items" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="2560" offsetX="1384" offsetY="38385" expression="items" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="2560" offsetX="1384" offsetY="38385" expression="items" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="2560" offsetX="1384" offsetY="38385" expression="items" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="2566" offsetX="567" offsetY="38475" expression="items" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/AddPatientViewController.cs" line="2635" offsetX="582" offsetY="39510" expression="alist" liveUpdate="False" />
+    <Watch file="iProPQRS/Screens/QualityMetricsForm.cs" line="263" offsetX="531" offsetY="3930" expression="lbltexts" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
