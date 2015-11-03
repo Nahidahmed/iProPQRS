@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="iProPQRS/iProPQRS.csproj">
+﻿<Properties StartupItem="iProPQRS/iProPQRS.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad2.9.1" />
   <MonoDevelop.Ide.Workbench ActiveDocument="iProPQRS/Screens/AddPatientViewController.cs">
     <Files>
